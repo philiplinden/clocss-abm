@@ -1,0 +1,12 @@
+[package]
+name = "network-time-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clock-steering = "0.1.0"
+hifitime = "3.8.6"
+krabmaga = "0.4.1"
+statime = { version = "0.1.0", features = ["fuzz"] }
