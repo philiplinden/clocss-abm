@@ -23,9 +23,9 @@ impl AgentRender for NetNodeVis {
             agent.status
         };
         match status {
-            NodeStatus::Susceptible => SpriteType::Emoji(String::from("white_circle")),
-            NodeStatus::Infected => SpriteType::Emoji(String::from("red_circle")),
-            NodeStatus::Resistant => SpriteType::Emoji(String::from("large_blue_circle")),
+            NodeStatus::Susceptible => SpriteType::Emoji(String::from("animals/butterfly")),
+            NodeStatus::Infected => SpriteType::Emoji(String::from("animals/crab")),
+            NodeStatus::Resistant => SpriteType::Emoji(String::from("animals/turtle")),
         }
     }
 
@@ -44,7 +44,7 @@ impl AgentRender for NetNodeVis {
 
     /// Emojis are 64x64, way too big for our simulation
     fn scale(&self, _agent: &Box<dyn Agent>, _state: &Box<&dyn State>) -> (f32, f32) {
-        (0.3, 0.3)
+        (0.05, 0.05)
     }
 
     /// No rotation is needed
