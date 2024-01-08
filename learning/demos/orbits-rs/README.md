@@ -1,0 +1,1 @@
+Example GUI using the [egui eframe template](https://github.com/emilk/eframe_template)
